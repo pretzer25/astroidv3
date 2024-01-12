@@ -93,7 +93,6 @@
                     games.forEach(game => {
                       const button = document.createElement('button');
                       button.innerText = game.title;
-                      button.style.backgroundImage = `url(${game.imgpath})`;
                       button.onclick = () => {
                         if (game.type === 'app') {
                           const source = game.source.replace('https://', '');
